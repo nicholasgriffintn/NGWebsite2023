@@ -1,0 +1,119 @@
+# https://nextjs.org/docs/basic-features/eslint
+# https://eslint.org/docs/user-guide/configuring/configuration-files#using-configuration-files
+
+root: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:jest/recommended
+  - plugin:jest/style
+  - next/core-web-vitals
+  - prettier
+env:
+  browser: true
+  node: true
+plugins:
+  - jest
+rules: # https://eslint.org/docs/rules
+  # Possible Problems - https://eslint.org/docs/rules/#possible-problems
+  no-self-compare: error # https://eslint.org/docs/rules/no-self-compare
+  no-unreachable-loop: error # https://eslint.org/docs/rules/no-unreachable-loop
+  no-use-before-define: # https://eslint.org/docs/rules/no-use-before-define
+    - error
+    - functions: true
+      classes: true
+      variables: true
+  require-atomic-updates: # https://eslint.org/docs/rules/require-atomic-updates
+    - error
+    - allowProperties: true
+
+  # Suggestions - https://eslint.org/docs/rules/#suggestions
+  camelcase: error # https://eslint.org/docs/rules/camelcase
+  consistent-this: # https://eslint.org/docs/rules/consistent-this
+    - error
+    - that
+  default-case-last: error # https://eslint.org/docs/rules/default-case-last
+  default-param-last: error # https://eslint.org/docs/rules/default-param-last
+  eqeqeq: # https://eslint.org/docs/rules/eqeqeq
+    - error
+    - always
+  func-name-matching: error # https://eslint.org/docs/rules/func-name-matching
+  func-names: # https://eslint.org/docs/rules/func-names
+    - error
+    - always
+  no-alert: error # https://eslint.org/docs/rules/no-alert
+  no-array-constructor: error # https://eslint.org/docs/rules/no-array-constructor
+  no-bitwise: error # https://eslint.org/docs/rules/no-bitwise
+  no-caller: error # https://eslint.org/docs/rules/no-caller
+  no-confusing-arrow: # https://eslint.org/docs/rules/no-confusing-arrow
+    - error
+    - allowParens: false
+  no-console: error # https://eslint.org/docs/rules/no-console
+  no-continue: error # https://eslint.org/docs/rules/no-continue
+  no-else-return: # https://eslint.org/docs/rules/no-else-return
+    - error
+    - allowElseIf: false
+  no-empty-function: error # https://eslint.org/docs/rules/no-empty-function
+  no-eq-null: error # https://eslint.org/docs/rules/no-eq-null
+  no-eval: error # https://eslint.org/docs/rules/no-eval
+  no-extra-bind: error # https://eslint.org/docs/rules/no-extra-bind
+  no-extra-semi: error # https://eslint.org/docs/rules/no-extra-semi
+  no-floating-decimal: error # https://eslint.org/docs/rules/no-floating-decimal
+  no-implicit-coercion: error # https://eslint.org/docs/rules/no-implicit-coercion
+  no-implicit-globals: error # https://eslint.org/docs/rules/no-implicit-globals
+  no-implied-eval: error # https://eslint.org/docs/rules/no-implied-eval
+  no-invalid-this: error # https://eslint.org/docs/rules/no-invalid-this
+  no-iterator: error # https://eslint.org/docs/rules/no-iterator
+  no-labels: error # https://eslint.org/docs/rules/no-labels
+  no-lone-blocks: error # https://eslint.org/docs/rules/no-lone-blocks
+  no-lonely-if: error # https://eslint.org/docs/rules/no-lonely-if
+  no-loop-func: error # https://eslint.org/docs/rules/no-loop-func
+  no-multi-assign: error # https://eslint.org/docs/rules/no-multi-assign
+  no-param-reassign: # https://eslint.org/docs/rules/no-param-reassign
+    - error
+    - props: true
+  no-plusplus: error # https://eslint.org/docs/rules/no-plusplus
+  no-proto: error # https://eslint.org/docs/rules/no-proto
+  no-return-assign: error # https://eslint.org/docs/rules/no-return-assign
+  no-return-await: error # https://eslint.org/docs/rules/no-return-await
+  no-script-url: error # https://eslint.org/docs/rules/no-script-url
+  no-sequences: error # https://eslint.org/docs/rules/no-sequences
+  no-throw-literal: error # https://eslint.org/docs/rules/no-throw-literal
+  no-undef-init: error # https://eslint.org/docs/rules/no-undef-init
+  no-underscore-dangle: error # https://eslint.org/docs/rules/no-underscore-dangle
+  no-unneeded-ternary: error # https://eslint.org/docs/rules/no-unneeded-ternary
+  no-unused-expressions: error # https://eslint.org/docs/rules/no-unused-expressions
+  no-useless-call: error # https://eslint.org/docs/rules/no-useless-call
+  no-var: error # https://eslint.org/docs/rules/no-var
+  one-var: # https://eslint.org/docs/rules/one-var
+    - error
+    - never
+  prefer-const: error # https://eslint.org/docs/rules/prefer-const
+  prefer-exponentiation-operator: error # https://eslint.org/docs/rules/prefer-exponentiation-operator
+  prefer-template: error # https://eslint.org/docs/rules/prefer-template
+  yoda: error # https://eslint.org/docs/rules/yoda
+
+  # Layout & Formatting - https://eslint.org/docs/rules/#layout-formatting
+  brace-style: error # https://eslint.org/docs/rules/brace-style
+
+  # Jest Plugin - https://github.com/jest-community/eslint-plugin-jest
+  jest/valid-title: off # https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
+  jest/no-conditional-expect: off # https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-conditional-expect.md
+  jest/no-standalone-expect: off
+
+  # Typescript
+  '@typescript-eslint/no-explicit-any': error
+  '@typescript-eslint/no-unused-vars': error
+overrides:
+  - files:
+      - test/**/**
+    rules:
+      camelcase: 'off'
+  - files:
+      - infrastructure/**/test/**/*.ts
+    rules:
+      jest/expect-expect: 'off'
+  - files:
+      - gelwind/**/**
+    rules:
+      '@typescript-eslint/no-var-requires': 'off'

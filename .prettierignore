@@ -1,0 +1,8 @@
+/.git
+/.coverage
+/.jest
+/.next
+node_modules
+/public
+.DS_Store
+dist
