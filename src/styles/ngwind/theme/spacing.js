@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const SPACING = require('../settings/spacing');
 
 module.exports = {

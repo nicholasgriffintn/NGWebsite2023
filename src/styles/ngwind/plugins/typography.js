@@ -1,5 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const plugin = require('tailwindcss/plugin');
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { FONT_SCALE, GROUP_A, GROUP_D } = require('../settings/typography.js');
 
 const NO_TOUCH_CLASS = '.ng-no-touch';
