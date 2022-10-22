@@ -41,13 +41,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  Build Tailwind Config:
+  build_tailwind_config:
     runs-on: ubuntu-22.04
     steps:
       - name: Install dependencies
         run: pnpm tailwind-config:export
 
-  Deploy to Pages:
+  deploy_to_pages:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
