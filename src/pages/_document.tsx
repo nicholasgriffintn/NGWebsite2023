@@ -1,15 +1,14 @@
 import Document, { Html, Head, Main, NextScript, DocumentInitialProps } from 'next/document';
 
 interface NgWebDocumentProps {
-  config: {[key: string]: string};
+  config: { [key: string]: string };
 }
 
 class NgWebDocument extends Document<NgWebDocumentProps> {
   render() {
     return (
-      <Html lang='en-gb'>
-        <Head>
-        </Head>
+      <Html lang="en-gb">
+        <Head></Head>
         <body className="ng-bg-background">
           <div id="page-modules">
             <Main />
@@ -23,9 +22,9 @@ class NgWebDocument extends Document<NgWebDocumentProps> {
 
 NgWebDocument.getInitialProps = async (ctx): Promise<DocumentInitialProps & NgWebDocumentProps> => {
   const initialProps = await Document.getInitialProps(ctx);
-  const config = {}
+  const config = {};
 
-  return {...initialProps, config};
+  return { ...initialProps, config };
 };
 
 export default NgWebDocument;

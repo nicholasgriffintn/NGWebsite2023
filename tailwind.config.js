@@ -60,8 +60,8 @@ module.exports = {
       brand: {
         dark: '#171923',
         light: '#093054',
-        core: '#093054'
-      }
+        core: '#093054',
+      },
     },
     extend: {
       animation: {
