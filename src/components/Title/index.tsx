@@ -9,13 +9,13 @@ const Title = ({ children, className = '' }: PropsWithChildren<Props>) => {
 
   if (shouldRender()) {
     return (
-      <header className={`ng-mt-4 ${className ?? ''}`}>
+      <div className={`ng-mt-4 ${className ?? ''}`}>
         <>
           <h1 className="ng-text-primary ng-text-trafalgar m:ng-text-[32px] ng-font-bold ng-mr-3">
             {children}
           </h1>
         </>
-      </header>
+      </div>
     );
   }
 };

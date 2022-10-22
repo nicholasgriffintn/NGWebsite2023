@@ -8,9 +8,12 @@ class NgWebDocument extends Document<NgWebDocumentProps> {
   render() {
     return (
       <Html lang="en-gb">
-        <Head></Head>
+        <Head />
+        <link rel="preconnect" href="https://cognito-identity.eu-west-1.amazonaws.com"></link>
         <body className="ng-bg-background">
           <main role="main" className="ng-min-h-screen" id="page-modules">
+            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+            <script src="/scripts/dm-flash.js" />
             <Main />
             <NextScript />
           </main>
