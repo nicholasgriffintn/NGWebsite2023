@@ -1,9 +1,7 @@
 name: 'Next PR Checks'
 
 on:
-  push:
-    branches:
-      - pull_request
+  - pull_request
 
 jobs:
   test:
