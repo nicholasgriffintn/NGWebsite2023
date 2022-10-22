@@ -1,7 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const plugin = require('tailwindcss/plugin');
 module.exports = {
-  content: ['./src/pages/**/*.{ts,tsx}'],
+  presets: [require('./src/styles/ngwind')],
+  content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   corePlugins: {
     aspectRatio: false,
   },

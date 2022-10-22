@@ -4,6 +4,21 @@
       "title": "Nicholas Griffin",
       "description": "Software Engineer, Blogger and Technology Enthusiast",
       "imageUrl": "https://nicholasgriffin.dev/images/social.png"
+    },
+    "error": {
+      "title": "Sorry, there was an error! | Nicholas Griffin",
+      "description": "Try heading back to my homepage",
+      "imageUrl": "https://nicholasgriffin.dev/images/social.png"
+    },
+    "500": {
+      "title": "Sorry, there was an error! | Nicholas Griffin",
+      "description": "Try heading back to my homepage",
+      "imageUrl": "https://nicholasgriffin.dev/images/social.png"
+    },
+    "404": {
+      "title": "Sorry, that page could not be found! | Nicholas Griffin",
+      "description": "Try heading back to my homepage",
+      "imageUrl": "https://nicholasgriffin.dev/images/social.png"
     }
   }
 }

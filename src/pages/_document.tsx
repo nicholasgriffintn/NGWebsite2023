@@ -10,10 +10,10 @@ class NgWebDocument extends Document<NgWebDocumentProps> {
       <Html lang="en-gb">
         <Head></Head>
         <body className="ng-bg-background">
-          <div id="page-modules">
+          <main role="main" id="page-modules">
             <Main />
             <NextScript />
-          </div>
+          </main>
         </body>
       </Html>
     );

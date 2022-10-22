@@ -1,17 +1,20 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 
 import Metadata from '@src/components/Metadata';
+import Wrap from '@src/components/Wrap';
+import Title from '@src/components/Title';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Metadata />
-
-      <main>
-        <h1>Hello World</h1>
-      </main>
-    </div>
+      <Wrap>
+        <Title className="ng-text-center">Hello World!</Title>
+        <p className="ng-text-center ng-text-primary ng-mt-4 ng-mb-4">
+          Something cool will be coming soon, I promise!
+        </p>
+      </Wrap>
+    </>
   );
 };
 
