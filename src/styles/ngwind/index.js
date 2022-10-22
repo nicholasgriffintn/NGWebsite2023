@@ -5,5 +5,5 @@ module.exports = {
     ...require('./theme/spacing'),
     ...require('./theme/fonts'),
   },
-  plugins: [require('./plugins/typography.js')],
+  plugins: [require('./plugins/typography.js'), require('./plugins/highlightjs.js')],
 };

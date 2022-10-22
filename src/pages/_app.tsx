@@ -5,6 +5,8 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import '@src/styles/globals.css';
 
+import AnalyticsWrapper from '@src/components/AnalyticsWrapper';
+
 type DefaultPageProps = {
   dehydratedState: DehydratedState;
 };
@@ -15,7 +17,9 @@ function NgWebApp({ Component, pageProps }: AppProps<DefaultPageProps>) {
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
-        <Component {...pageProps} />
+        <AnalyticsWrapper>
+          <Component {...pageProps} />
+        </AnalyticsWrapper>
       </Hydrate>
 
       <ReactQueryDevtools initialIsOpen={false} />

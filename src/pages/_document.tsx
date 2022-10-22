@@ -1,5 +1,8 @@
 import Document, { Html, Head, Main, NextScript, DocumentInitialProps } from 'next/document';
 
+import Header from '@src/components/Header';
+import Footer from '@src/components/Footer';
+
 interface NgWebDocumentProps {
   config: { [key: string]: string };
 }
@@ -10,11 +13,13 @@ class NgWebDocument extends Document<NgWebDocumentProps> {
       <Html lang="en-gb">
         <Head />
         <link rel="preconnect" href="https://cognito-identity.eu-west-1.amazonaws.com"></link>
-        <body className="ng-bg-background">
-          <main role="main" className="ng-min-h-screen" id="page-modules">
+        <body className="ng-bg-background ng-min-h-screen">
+          <Header />
+          <main role="main" id="page-modules">
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
             <script src="/scripts/dm-flash.js" />
             <Main />
+            <Footer />
             <NextScript />
           </main>
         </body>

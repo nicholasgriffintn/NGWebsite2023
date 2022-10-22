@@ -1,5 +1,7 @@
 import { PropsWithChildren, useEffect, useState } from 'react';
-import Image from 'next/image';
+
+import ResponsiveImage from '@src/components/ResponsiveImage';
+import AdjustableLink from '@src/components/AdjustableLink';
 
 export interface Props {
   statusCode?: string;
@@ -7,6 +9,8 @@ export interface Props {
 
 const ErrorBox = ({ statusCode = '500' }: PropsWithChildren<Props>) => {
   const [failImage, setFailImage] = useState(null);
+  const [failImageWidth, setFailImageWidth] = useState(null);
+  const [failImageHeight, setFailImageHeight] = useState(null);
   const [failData, setFailData] = useState<{
     url?: string;
     title?: string;
@@ -38,8 +42,12 @@ const ErrorBox = ({ statusCode = '500' }: PropsWithChildren<Props>) => {
           setFailData(data.data);
           if (data.data.images && data.data.images.downsized_large) {
             setFailImage(data.data.images.downsized_large.url);
+            setFailImageWidth(data.data.images.downsized_large.width);
+            setFailImageHeight(data.data.images.downsized_large.height);
           } else if (data.data.image_original_url) {
             setFailImage(data.data.image_original_url);
+            setFailImageWidth(data.data.images.image_original_url.width);
+            setFailImageHeight(data.data.images.image_original_url.height);
           }
         }
       })
@@ -51,31 +59,29 @@ const ErrorBox = ({ statusCode = '500' }: PropsWithChildren<Props>) => {
 
   return (
     <>
-      <div className="ng-text-center ng-max-w-[780px] ng-min-h-[450px] ng-mx-auto ng-relative">
-        {failImage ? (
-          <Image
+      {failImage ? (
+        <div className="ng-text-center">
+          <ResponsiveImage
             src={failImage}
+            width={failImageWidth}
+            height={failImageHeight}
             alt="Everything is fine..."
-            layout="fill"
-            quality={80}
-            objectFit="contain"
+            imageClassname="ng-mx-auto"
           />
-        ) : null}
-      </div>
+        </div>
+      ) : null}
       <br></br>
       {failData?.url ? (
         <div className="ng-text-primary ng-text-center">
           <small className="ng-text-center ng-min-w-[480px] ng-mx-auto">
             {failData.title} was retrieved from{' '}
-            <a target="_blank" rel="noopener noreferrer" href={failData.url}>
-              GIPHY
-            </a>{' '}
+            <AdjustableLink href={failData.url}>GIPHY</AdjustableLink>{' '}
             {failData.user ? (
               <>
                 and was uploaded by{' '}
-                <a target="_blank" rel="noopener noreferrer" href={failData.user.profile_url}>
+                <AdjustableLink href={failData.user.profile_url}>
                   {failData.user.display_name}
-                </a>
+                </AdjustableLink>
               </>
             ) : null}
           </small>
