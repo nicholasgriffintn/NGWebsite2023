@@ -1,4 +1,4 @@
-name: "Pull Request Labeler"
+name: 'Pull Request Labeler'
 
 on:
   - pull_request_target
@@ -7,6 +7,6 @@ jobs:
   triage:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.LABELER_GH_PAT }}"
+      - uses: actions/labeler@v4
+        with:
+          repo-token: '${{ secrets.LABELER_GH_PAT }}'

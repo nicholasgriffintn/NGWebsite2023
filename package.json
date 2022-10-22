@@ -22,9 +22,10 @@
     "lint:fix": "NEXT_TELEMETRY_DISABLED=1 next lint --fix --dir .",
     "browserslist:update-db": "npx browserslist@latest --update-db",
     "browserslist:list": "npx browserslist@latest",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,yml,yaml,md}'",
+    "format:check": "prettier --check '**/*.{ts,tsx,js,jsx,json,yml,yaml,md}'",
     "type-check": "tsc --pretty",
     "tailwind-config": "tailwind-config-viewer -o",
     "tailwind-config:export": "tailwind-config-viewer export ./dist/tailwind-config"
