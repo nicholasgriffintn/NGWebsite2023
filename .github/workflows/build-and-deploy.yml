@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  install:
+  install_build_deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,24 +41,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  build_tailwind_config:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Install dependencies
-        run: pnpm tailwind-config:export
+      - name: Build Tailwind Config
+        run: pnpm run tailwind-config:export
 
-  deploy_to_pages:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Build
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-
-      - name: Deploy
+      - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
