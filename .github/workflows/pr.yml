@@ -18,7 +18,7 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm --prefer-offline install
-      - run: pnpm run test1
+      - run: pnpm run test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
   lint:
