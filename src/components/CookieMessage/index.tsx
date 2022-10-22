@@ -1,4 +1,5 @@
 const CookieMessageWrapper = ({ children }) => {
+  // TODO: Need to add state management
   const showCookieMessage = false;
   const setShowCookieMessage = (state) => {
     return state;

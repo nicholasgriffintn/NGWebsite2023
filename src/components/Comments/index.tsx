@@ -1,4 +1,5 @@
 const Comments = () => {
+  // TODO: Need to add state management
   const darkMode = {
     darkModeActive: true,
   };

@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import config from '@src/config';
 
 const AnalyticsWrapper = ({ children }) => {
+  // TODO: Need to add state management
   const cookiesAccepted = '1';
 
   const router = useRouter();

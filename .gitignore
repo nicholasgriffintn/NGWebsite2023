@@ -16,6 +16,7 @@
 # production
 /build
 /static
+/dist/tailwind-config
 
 # misc
 .DS_Store
