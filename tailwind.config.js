@@ -31,7 +31,6 @@ module.exports = {
   },
   theme: {
     colors: {
-      // Colour palette
       grey: {
         1: '#fefefe',
         2: '#f6f6f6',
@@ -58,6 +57,11 @@ module.exports = {
         divider: 'var(--color-contrast-divider)',
         background: 'var(--color-contrast-background)',
       },
+      brand: {
+        dark: '#171923',
+        light: '#093054',
+        core: '#093054'
+      }
     },
     extend: {
       animation: {
