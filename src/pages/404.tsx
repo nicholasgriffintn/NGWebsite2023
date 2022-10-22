@@ -9,7 +9,7 @@ type Props = {
   statusCode: string;
 };
 
-const ErrorPage: NextPage<Props> = ({ statusCode = '500' }) => {
+const ErrorPage: NextPage<Props> = ({ statusCode = '404' }) => {
   return (
     <>
       <Metadata pageName="404" />
