@@ -23,5 +23,3 @@ jobs:
 
       - name: Label Commenter
         uses: peaceiris/actions-label-commenter@v1
-        env:
-          RUNNER_DEBUG: 1
