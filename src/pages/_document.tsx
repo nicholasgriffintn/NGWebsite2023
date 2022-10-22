@@ -15,12 +15,13 @@ class NgWebDocument extends Document<NgWebDocumentProps> {
         <link rel="preconnect" href="https://cognito-identity.eu-west-1.amazonaws.com"></link>
         <body className="ng-bg-background ng-min-h-screen">
           <Header />
-          <main role="main" id="page-modules">
+          <main role="main" id="page-modules" className="ng-text-primary">
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
             <script src="/scripts/dm-flash.js" />
             <Main />
             <Footer />
             <NextScript />
+            <div id="modal-root"></div>
           </main>
         </body>
       </Html>
