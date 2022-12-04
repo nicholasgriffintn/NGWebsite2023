@@ -30,7 +30,7 @@ specifiers:
   lodash.merge: 4.6.2
   next: 13.0.2
   postcss: 8.4.19
-  posthog-js: 1.34.0
+  posthog-js: 1.36.1
   prettier: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -53,7 +53,7 @@ dependencies:
   highlight.js: 11.6.0
   lodash.merge: 4.6.2
   next: 13.0.2_biqbaboplfbrettd7655fr4n2y
-  posthog-js: 1.34.0
+  posthog-js: 1.36.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.39.2_react@18.2.0
@@ -972,8 +972,8 @@ packages:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
 
-  /@sentry/types/7.16.0:
-    resolution: {integrity: sha512-i6D+OK6d0l/k+VQvRp/Pt21WkDEgVBUIZq+sOkEZJczbcfexVdXKeXXoYTD2vYuFq8Yy28fzlsZaKI+NoH94yQ==}
+  /@sentry/types/7.22.0:
+    resolution: {integrity: sha512-LhCL+wb1Jch+OesB2CIt6xpfO1Ab6CRvoNYRRzVumWPLns1T3ZJkarYfhbLaOEIb38EIbPgREdxn2AJT560U4Q==}
     engines: {node: '>=8'}
     dev: false
 
@@ -4605,10 +4605,10 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /posthog-js/1.34.0:
-    resolution: {integrity: sha512-HkRwwzdz31N5ykQIO3SIkSS8nwhdqqnuDZ/qltitX4FhxrV9/tSRavEXz0YLvioOXeNVmQWtsN3krKajErwkwg==}
+  /posthog-js/1.36.1:
+    resolution: {integrity: sha512-Uy5pWkktFjwQ8FGykwmB5daCMkAV6zZvoWD8gsyEoO2oict+x8F81RE4u7ZGYSODgXzu51aMzcoRyXysZwBTTw==}
     dependencies:
-      '@sentry/types': 7.16.0
+      '@sentry/types': 7.22.0
       fflate: 0.4.8
       rrweb-snapshot: 1.1.14
     dev: false
