@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/parser': 5.45.0
   autoprefixer: 10.4.13
   css: 3.0.0
-  dayjs: 1.11.6
+  dayjs: 1.11.7
   eslint: 8.28.0
   eslint-config-next: 13.0.5
   eslint-config-prettier: 8.5.0
@@ -47,7 +47,7 @@ dependencies:
   '@tanstack/react-query': 4.19.0_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-query-devtools': 4.19.0_budcsmmktl2xfbndofa5sinodm
   css: 3.0.0
-  dayjs: 1.11.6
+  dayjs: 1.11.7
   graphql: 16.6.0
   graphql-request: 5.0.0_graphql@16.6.0
   highlight.js: 11.7.0
@@ -2006,8 +2006,8 @@ packages:
       whatwg-url: 11.0.0
     dev: true
 
-  /dayjs/1.11.6:
-    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /debug/2.6.9:
