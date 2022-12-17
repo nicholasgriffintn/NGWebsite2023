@@ -32,8 +32,8 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "1.4.4",
-    "@tanstack/react-query": "4.19.1",
-    "@tanstack/react-query-devtools": "4.19.1",
+    "@tanstack/react-query": "4.20.4",
+    "@tanstack/react-query-devtools": "4.20.4",
     "css": "3.0.0",
     "dayjs": "1.11.7",
     "graphql": "16.6.0",
