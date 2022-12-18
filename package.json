@@ -40,7 +40,7 @@
     "graphql-request": "5.0.0",
     "highlight.js": "11.7.0",
     "lodash.merge": "4.6.2",
-    "next": "13.0.6",
+    "next": "13.0.7",
     "posthog-js": "1.37.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
