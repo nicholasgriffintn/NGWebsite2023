@@ -59,7 +59,7 @@ jobs:
           version: 6.0.2
       - name: Install dependencies
         run: pnpm --filter "./packages/**" --filter query --prefer-offline install
-      - run: pnpm run typecheck
+      - run: pnpm run type-check
   format:
     name: 'Format Check'
     runs-on: ubuntu-latest
