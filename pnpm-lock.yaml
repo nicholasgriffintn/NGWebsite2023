@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@aws-amplify/auth': 4.6.10
+  '@aws-amplify/auth': 4.6.15
   '@aws-amplify/core': 4.7.8
   '@hcaptcha/react-hcaptcha': 1.4.4
   '@next/bundle-analyzer': 13.0.7
@@ -47,7 +47,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@aws-amplify/auth': 4.6.10
+  '@aws-amplify/auth': 4.6.15
   '@aws-amplify/core': 4.7.8
   '@hcaptcha/react-hcaptcha': 1.4.4_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
@@ -108,22 +108,37 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@aws-amplify/auth/4.6.10:
-    resolution: {integrity: sha512-iXKpfo+S9jDQGb9D7cNm9XzjkItqCa2YCX/Wml8FQcZz/Ds8Yyr88d3vunk4A5brVXXIo6svY+2WSlkpbeyREQ==}
+  /@aws-amplify/auth/4.6.15:
+    resolution: {integrity: sha512-TJ2S1Pr4WV/KzlrOIwrGcRUFBu/OftVzKn3Kz1MDyrT1DXsEbufCfpn0Du9dA1Ebi9E+T22/nSQUpPpgSTwByg==}
     dependencies:
-      '@aws-amplify/cache': 4.0.59
-      '@aws-amplify/core': 4.7.8
-      amazon-cognito-identity-js: 5.2.11
+      '@aws-amplify/cache': 4.0.64
+      '@aws-amplify/core': 4.7.13
+      amazon-cognito-identity-js: 5.2.13
       crypto-js: 4.1.1
     transitivePeerDependencies:
       - encoding
       - react-native
     dev: false
 
-  /@aws-amplify/cache/4.0.59:
-    resolution: {integrity: sha512-+8g/4euAyBRezh66GOhjplF1tbfug9d+Ko6/lyuSn4pxFUhileKZsYxn/UO3Z8xb9vpM+cbWuJkzalhQGRuZkw==}
+  /@aws-amplify/cache/4.0.64:
+    resolution: {integrity: sha512-IfpvNLrWW6R1n3F+QURvbTuNDMWNKOjkHeJY4e6TvjXgvDBxyoGtAaXnzMXsO1OhCPnIceASlOtvxWwm36BmFA==}
     dependencies:
-      '@aws-amplify/core': 4.7.8
+      '@aws-amplify/core': 4.7.13
+    transitivePeerDependencies:
+      - react-native
+    dev: false
+
+  /@aws-amplify/core/4.7.13:
+    resolution: {integrity: sha512-1Tek6n2PpRKZlBUKHIOAvTQMVdcElis/InCuXiksRZXqYlKoTA/YslaRW6wNVjkcCP4Q2n3HEUuuzSMxDJVZBQ==}
+    dependencies:
+      '@aws-crypto/sha256-js': 1.0.0-alpha.0
+      '@aws-sdk/client-cloudwatch-logs': 3.6.1
+      '@aws-sdk/client-cognito-identity': 3.6.1
+      '@aws-sdk/credential-provider-cognito-identity': 3.6.1
+      '@aws-sdk/types': 3.6.1
+      '@aws-sdk/util-hex-encoding': 3.6.1
+      universal-cookie: 4.0.4
+      zen-observable-ts: 0.8.19
     transitivePeerDependencies:
       - react-native
     dev: false
@@ -2044,8 +2059,8 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /amazon-cognito-identity-js/5.2.11:
-    resolution: {integrity: sha512-KOf72JL1bwvfX1rChK2VHNLqnB6QNBfQrp6Hi0pGfWFa0If7XHIFMmgv2FcIf2ec40NPGeJ5+WEdZ2PJ0T+taw==}
+  /amazon-cognito-identity-js/5.2.13:
+    resolution: {integrity: sha512-kCF2yQ8mbqp8N8og2h/mYiWYAgYZh+0aLzMfIBeTyNtviTvlrPOgCiRmDEH/EUhBXLgsiJk/sw0xj0JWVsi1QQ==}
     dependencies:
       buffer: 4.9.2
       crypto-js: 4.1.1
