@@ -132,7 +132,13 @@ const BookmarksAdminWidget = () => {
   };
 
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [modalBookmark, setModalBookmark] = useState({});
+  const [modalBookmark, setModalBookmark] = useState<{
+    status?: string;
+    screenshot?: string;
+    description?: string;
+    url?: string;
+    title?: string;
+  }>({});
 
   function openModal(bookmark) {
     setModalBookmark(bookmark);
@@ -359,7 +365,7 @@ const Page: NextPage = () => {
             </div>
             <div>
               <label>Description:</label>
-              <textarea cols="6" {...register('description', { required: true })} />
+              <textarea cols={6} {...register('description', { required: true })} />
               {errors.description && <span>A description is required</span>}
             </div>
             <div>
@@ -398,7 +404,7 @@ const Page: NextPage = () => {
               Submit a Bookmark
             </button>
           </p>
-          {alreadyLoggedIn === true ? (
+          {alreadyLoggedIn ? (
             <div className="admin-block">
               <h2>Bookmarks Admin</h2>
               <BookmarksAdminWidget />
