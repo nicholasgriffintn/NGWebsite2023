@@ -1,5 +1,5 @@
 import ReturnImageFormattingUrl from '@src/utils/returnImageFormattingUrl';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 const ResponsiveImage = (props) => {
   const { src, alt, height, width, imageClassname } = props;

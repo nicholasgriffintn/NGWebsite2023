@@ -7,10 +7,8 @@ const LinkComponent = (props) => {
 
   if (isInternalLink === true) {
     return (
-      <Link href={href} passHref>
-        <a className={className} {...props}>
-          {children}
-        </a>
+      <Link href={href} className={className} {...props}>
+        {children}
       </Link>
     );
   }
