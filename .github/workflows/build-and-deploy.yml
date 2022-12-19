@@ -11,27 +11,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2.2.4
         with:
-          node-version: 16
-
+          version: 7
       - uses: actions/setup-node@v3
         with:
           node-version: 16.16.0
           cache: 'pnpm'
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-
       - name: Install dependencies
         run: pnpm --prefer-offline install
-
       - name: Build Tailwind Config
         run: pnpm run tailwind-config:export
-
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
