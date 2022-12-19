@@ -392,7 +392,7 @@ const Page: NextPage = () => {
             </button>
           </form>
         </Modal>
-        <div>
+        <div className="ng-prose ng-text-primary ng-mx-auto">
           <Title>Bookmarks</Title>
           <p>Would you like to suggest a bookmark for me to look at?</p>
           <p>
