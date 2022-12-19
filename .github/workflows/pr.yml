@@ -14,8 +14,11 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.14.2
+          node-version: 16.16.0
           cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
       - name: Install dependencies
         run: pnpm --prefer-offline install
       - run: pnpm run test
@@ -31,8 +34,11 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.14.2
+          node-version: 16.16.0
           cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
       - name: Install dependencies
         run: pnpm --prefer-offline install
       - run: pnpm run test:eslint
@@ -46,8 +52,11 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.14.2
+          node-version: 16.16.0
           cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
       - name: Install dependencies
         run: pnpm --filter "./packages/**" --filter query --prefer-offline install
       - run: pnpm run typecheck
@@ -61,8 +70,11 @@ jobs:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.14.2
+          node-version: 16.16.0
           cache: 'pnpm'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
       - name: Install dependencies
         run: pnpm --prefer-offline install
       - run: pnpm run format:check
