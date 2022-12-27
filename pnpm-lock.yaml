@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@aws-amplify/auth': 4.6.15
-  '@aws-amplify/core': 4.7.8
+  '@aws-amplify/core': 5.0.7
   '@hcaptcha/react-hcaptcha': 1.4.4
   '@next/bundle-analyzer': 13.1.1
   '@tailwindcss/aspect-ratio': 0.4.2
@@ -48,7 +48,7 @@ specifiers:
 
 dependencies:
   '@aws-amplify/auth': 4.6.15
-  '@aws-amplify/core': 4.7.8
+  '@aws-amplify/core': 5.0.7
   '@hcaptcha/react-hcaptcha': 1.4.4_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-query-devtools': 4.20.4_fu3ixcwltlssi3ozitelgaebme
@@ -143,15 +143,16 @@ packages:
       - react-native
     dev: false
 
-  /@aws-amplify/core/4.7.8:
-    resolution: {integrity: sha512-mPBB0PXZf6AgX2uBhz4NyhGYEk+XD9YNZLmpMNw8WWiKOcoh4yZCJtGyQ7godGbqNnHTxHVzQpq37AU/U8T1TA==}
+  /@aws-amplify/core/5.0.7:
+    resolution: {integrity: sha512-Y4Wryidok42O5U6OiE/xi18EwkshI523SneBdpjszj4Cs+Mn4vZIKfnSRuTxvAt7PcZ2K4fMQ/uahigB3HkKhA==}
     dependencies:
-      '@aws-crypto/sha256-js': 1.0.0-alpha.0
+      '@aws-crypto/sha256-js': 1.2.2
       '@aws-sdk/client-cloudwatch-logs': 3.6.1
       '@aws-sdk/client-cognito-identity': 3.6.1
       '@aws-sdk/credential-provider-cognito-identity': 3.6.1
       '@aws-sdk/types': 3.6.1
       '@aws-sdk/util-hex-encoding': 3.6.1
+      tslib: 1.14.1
       universal-cookie: 4.0.4
       zen-observable-ts: 0.8.19
     transitivePeerDependencies:
@@ -589,6 +590,7 @@ packages:
 
   /@aws-sdk/util-base64-browser/3.6.1:
     resolution: {integrity: sha512-+DHAIgt0AFARDVC7J0Z9FkSmJhBMlkYdOPeAAgO0WaQoKj7rtsLQJ7P3v3aS1paKN5/sk5xNY7ziVB6uHtOvHA==}
+    deprecated: The package @aws-sdk/util-base64-browser has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       tslib: 1.14.1
     dev: false
@@ -596,6 +598,7 @@ packages:
   /@aws-sdk/util-base64-node/3.6.1:
     resolution: {integrity: sha512-oiqzpsvtTSS92+cL3ykhGd7t3qBJKeHvrgOwUyEf1wFWHQ2DPJR+dIMy5rMFRXWLKCl3w7IddY2rJCkLYMjaqQ==}
     engines: {node: '>= 10.0.0'}
+    deprecated: The package @aws-sdk/util-base64-node has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       '@aws-sdk/util-buffer-from': 3.6.1
       tslib: 1.14.1
