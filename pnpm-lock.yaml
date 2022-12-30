@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@aws-amplify/auth': 4.6.15
+  '@aws-amplify/auth': 5.1.1
   '@aws-amplify/core': 5.0.7
   '@hcaptcha/react-hcaptcha': 1.4.4
   '@next/bundle-analyzer': 13.1.1
@@ -47,7 +47,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@aws-amplify/auth': 4.6.15
+  '@aws-amplify/auth': 5.1.1
   '@aws-amplify/core': 5.0.7
   '@hcaptcha/react-hcaptcha': 1.4.4_biqbaboplfbrettd7655fr4n2y
   '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
@@ -108,38 +108,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@aws-amplify/auth/4.6.15:
-    resolution: {integrity: sha512-TJ2S1Pr4WV/KzlrOIwrGcRUFBu/OftVzKn3Kz1MDyrT1DXsEbufCfpn0Du9dA1Ebi9E+T22/nSQUpPpgSTwByg==}
+  /@aws-amplify/auth/5.1.1:
+    resolution: {integrity: sha512-NucpdoPdwvEIxT08EBVk4sQSMD24WESaJhDiHlQ4dpFVWV8M3uoPSRebs+DrGH5KBXIW1F2AcX63tCapv7Q8uA==}
     dependencies:
-      '@aws-amplify/cache': 4.0.64
-      '@aws-amplify/core': 4.7.13
-      amazon-cognito-identity-js: 5.2.13
-      crypto-js: 4.1.1
+      '@aws-amplify/core': 5.0.7
+      amazon-cognito-identity-js: 6.1.1
+      tslib: 1.14.1
     transitivePeerDependencies:
       - encoding
-      - react-native
-    dev: false
-
-  /@aws-amplify/cache/4.0.64:
-    resolution: {integrity: sha512-IfpvNLrWW6R1n3F+QURvbTuNDMWNKOjkHeJY4e6TvjXgvDBxyoGtAaXnzMXsO1OhCPnIceASlOtvxWwm36BmFA==}
-    dependencies:
-      '@aws-amplify/core': 4.7.13
-    transitivePeerDependencies:
-      - react-native
-    dev: false
-
-  /@aws-amplify/core/4.7.13:
-    resolution: {integrity: sha512-1Tek6n2PpRKZlBUKHIOAvTQMVdcElis/InCuXiksRZXqYlKoTA/YslaRW6wNVjkcCP4Q2n3HEUuuzSMxDJVZBQ==}
-    dependencies:
-      '@aws-crypto/sha256-js': 1.0.0-alpha.0
-      '@aws-sdk/client-cloudwatch-logs': 3.6.1
-      '@aws-sdk/client-cognito-identity': 3.6.1
-      '@aws-sdk/credential-provider-cognito-identity': 3.6.1
-      '@aws-sdk/types': 3.6.1
-      '@aws-sdk/util-hex-encoding': 3.6.1
-      universal-cookie: 4.0.4
-      zen-observable-ts: 0.8.19
-    transitivePeerDependencies:
       - react-native
     dev: false
 
@@ -174,14 +150,6 @@ packages:
       '@aws-crypto/util': 1.2.2
       '@aws-sdk/types': 3.6.1
       '@aws-sdk/util-locate-window': 3.188.0
-      tslib: 1.14.1
-    dev: false
-
-  /@aws-crypto/sha256-js/1.0.0-alpha.0:
-    resolution: {integrity: sha512-GidX2lccEtHZw8mXDKJQj6tea7qh3pAnsNSp1eZNxsN4MMu2OvSraPSqiB1EihsQkZBMg0IiZPpZHoACUX/QMQ==}
-    dependencies:
-      '@aws-sdk/types': 1.0.0-rc.10
-      '@aws-sdk/util-utf8-browser': 1.0.0-rc.8
       tslib: 1.14.1
     dev: false
 
@@ -560,11 +528,6 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/types/1.0.0-rc.10:
-    resolution: {integrity: sha512-9gwhYnkTNuYZ+etCtM4T8gjpZ0SWSXbzQxY34UjSS+dt3C/UnbX0J22tMahp/9Z1yCa9pihtXrkD+nO2xn7nVQ==}
-    engines: {node: '>= 10.0.0'}
-    dev: false
-
   /@aws-sdk/types/3.6.1:
     resolution: {integrity: sha512-4Dx3eRTrUHLxhFdLJL8zdNGzVsJfAxtxPYYGmIddUkO2Gj3WA1TGjdfG4XN/ClI6e1XonCHafQX3UYO/mgnH3g==}
     engines: {node: '>= 10.0.0'}
@@ -660,12 +623,6 @@ packages:
     dependencies:
       '@aws-sdk/node-config-provider': 3.6.1
       '@aws-sdk/types': 3.6.1
-      tslib: 1.14.1
-    dev: false
-
-  /@aws-sdk/util-utf8-browser/1.0.0-rc.8:
-    resolution: {integrity: sha512-clncPMJ23rxCIkZ9LoUC8SowwZGxWyN2TwRb0XvW/Cv9EavkRgRCOrCpneGyC326lqtMKx36onnpaSRHxErUYw==}
-    dependencies:
       tslib: 1.14.1
     dev: false
 
@@ -2124,11 +2081,11 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /amazon-cognito-identity-js/5.2.13:
-    resolution: {integrity: sha512-kCF2yQ8mbqp8N8og2h/mYiWYAgYZh+0aLzMfIBeTyNtviTvlrPOgCiRmDEH/EUhBXLgsiJk/sw0xj0JWVsi1QQ==}
+  /amazon-cognito-identity-js/6.1.1:
+    resolution: {integrity: sha512-udhv6lQhcL2Tw8Y/xDiLg+h+2e0d+G4/vJyTRGVdDpvQiypMFjw/FOt7xyFtklk2EdQFXo3HDc3IMoQ19H2gqg==}
     dependencies:
+      '@aws-crypto/sha256-js': 1.2.2
       buffer: 4.9.2
-      crypto-js: 4.1.1
       fast-base64-decode: 1.0.0
       isomorphic-unfetch: 3.1.0
       js-cookie: 2.2.1
@@ -2649,10 +2606,6 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
-
-  /crypto-js/4.1.1:
-    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
-    dev: false
 
   /css.escape/1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
