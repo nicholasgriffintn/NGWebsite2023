@@ -33,7 +33,7 @@ specifiers:
   lodash.merge: 4.6.2
   next: 13.1.1
   postcss: 8.4.20
-  posthog-js: 1.39.0
+  posthog-js: 1.39.2
   prettier: 2.8.1
   qrcode.react: 3.1.0
   react: 18.2.0
@@ -59,7 +59,7 @@ dependencies:
   highlight.js: 11.7.0
   lodash.merge: 4.6.2
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
-  posthog-js: 1.39.0
+  posthog-js: 1.39.2
   qrcode.react: 3.1.0_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -5288,8 +5288,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /posthog-js/1.39.0:
-    resolution: {integrity: sha512-q3O55KDAyG8Z6Ho0ptBqwg4khcfZePxoLpJ9yzBgapehwvL+0TxQhW+vPN/034xs9DExgn6XavSE/DfGhPAJng==}
+  /posthog-js/1.39.2:
+    resolution: {integrity: sha512-IKdG5smnezeq0VHyx6JmIF2UjUvkKCpwvK5OOhwwhv4J5oq9+dpfI88B7eF07sSwc77uuGwE6+RhX1vhCYddew==}
     dependencies:
       '@sentry/types': 7.22.0
       fflate: 0.4.8
