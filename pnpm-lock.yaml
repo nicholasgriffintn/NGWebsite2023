@@ -38,7 +38,7 @@ specifiers:
   qrcode.react: 3.1.0
   react: 18.2.0
   react-dom: 18.2.0
-  react-hook-form: 7.41.3
+  react-hook-form: 7.45.0
   react-modal: 3.16.1
   tailwind-config-viewer: 1.7.2
   tailwindcss: 3.2.7
@@ -63,7 +63,7 @@ dependencies:
   qrcode.react: 3.1.0_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-hook-form: 7.41.3_react@18.2.0
+  react-hook-form: 7.45.0_react@18.2.0
   react-modal: 3.16.1_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -5427,8 +5427,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-hook-form/7.41.3_react@18.2.0:
-    resolution: {integrity: sha512-5QNTmqJtDb88WV5n41b6+AmcDMVyaJ3tccPgHAgS215w3jZ3bmJhDO27kNTr8u4YHNYXmS7p1/4/KachBAlUtw==}
+  /react-hook-form/7.45.0_react@18.2.0:
+    resolution: {integrity: sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
