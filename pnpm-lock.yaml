@@ -33,7 +33,7 @@ specifiers:
   lodash.merge: 4.6.2
   next: 13.1.1
   postcss: 8.4.21
-  posthog-js: 1.39.0
+  posthog-js: 1.68.2
   prettier: 2.8.5
   qrcode.react: 3.1.0
   react: 18.2.0
@@ -59,7 +59,7 @@ dependencies:
   highlight.js: 11.7.0
   lodash.merge: 4.6.2
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
-  posthog-js: 1.39.0
+  posthog-js: 1.68.2
   qrcode.react: 3.1.0_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1545,11 +1545,6 @@ packages:
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
     dev: true
-
-  /@sentry/types/7.22.0:
-    resolution: {integrity: sha512-LhCL+wb1Jch+OesB2CIt6xpfO1Ab6CRvoNYRRzVumWPLns1T3ZJkarYfhbLaOEIb38EIbPgREdxn2AJT560U4Q==}
-    engines: {node: '>=8'}
-    dev: false
 
   /@sinclair/typebox/0.24.48:
     resolution: {integrity: sha512-WPGpRNHbkOsfBDmh8QHU7a5NWzEuYNThST8x1cISvX0RpP+1+V8zjuJqNwGJkHGIlhdIIhv6qVYqXz2q5/gjAA==}
@@ -5308,12 +5303,10 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /posthog-js/1.39.0:
-    resolution: {integrity: sha512-q3O55KDAyG8Z6Ho0ptBqwg4khcfZePxoLpJ9yzBgapehwvL+0TxQhW+vPN/034xs9DExgn6XavSE/DfGhPAJng==}
+  /posthog-js/1.68.2:
+    resolution: {integrity: sha512-oh3MQonhbgVbBYNJ/cAx1L6fginAF5Msz3shexnXPhDNKj1DQGosepQC6TQpdeeUWp0H7R2cQG9eHJwmrEM1Lw==}
     dependencies:
-      '@sentry/types': 7.22.0
       fflate: 0.4.8
-      rrweb-snapshot: 1.1.14
     dev: false
 
   /prelude-ls/1.1.2:
@@ -5595,10 +5588,6 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: true
-
-  /rrweb-snapshot/1.1.14:
-    resolution: {integrity: sha512-eP5pirNjP5+GewQfcOQY4uBiDnpqxNRc65yKPW0eSoU1XamDfc4M8oqpXGMyUyvLyxFDB0q0+DChuxxiU2FXBQ==}
-    dev: false
 
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
